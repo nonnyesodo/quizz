@@ -59,7 +59,7 @@ class _QuizState extends State<Quiz> {
             const SizedBox(
               height: 200,
             ),
-
+           //Button to display answer A
             Expanded(
               child: ElevatedButton(
                 onPressed: () {
@@ -74,9 +74,11 @@ class _QuizState extends State<Quiz> {
                 ),
               ),
             ),
+//Space between 
             const SizedBox(
               height: 20,
             ),
+//Button to display answer B
             Expanded(
               child: ElevatedButton(
                 onPressed: () {
@@ -91,9 +93,11 @@ class _QuizState extends State<Quiz> {
                 ),
               ),
             ),
+//Space between 
             const SizedBox(
               height: 20,
             ),
+//Button to display answer c
             Expanded(
               child: ElevatedButton(
                 onPressed: () {
@@ -113,7 +117,7 @@ class _QuizState extends State<Quiz> {
       ),
     );
   }
-
+// Function to check answer ,show dialog,reset question and scorekeeper 
   void checkanswer(String userpickedanswer) {
     String correctanswer = quizquestion.getcorrectanswer();
     setState(() {
